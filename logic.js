@@ -40,7 +40,7 @@ const renderizarHabitos = () => {
 
             return `
                 <li class="${clasesItem}" data-id="${id}">
-                    <span class="${clasesNombre}">${nombre}</span>
+                    <span class="${clasesNombre}" data-accion="completar">${nombre}</span>
                     <button type="button" class="btn btn-outline-danger btn-sm" data-accion="eliminar">
                         Eliminar
                     </button>
@@ -56,11 +56,14 @@ listaEl.addEventListener("click", (event) => {
 
     const id = Number(item.dataset.id);
     const eliminar = event.target.closest("[data-accion='eliminar']");
+    const completar = event.target.closest("[data-accion='completar']");
 
     if (eliminar) {
         eliminarHabito(id);
-    } else {
+    } else if (completar) {
         completarHabito(id);
+    } else {
+        return;
     }
 
     renderizarHabitos();

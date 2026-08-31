@@ -85,6 +85,10 @@ body {
     font-weight: 700;
 }
 
+.habit-list .list-group-item span {
+    cursor: pointer;
+}
+
 .habit-list .list-group-item-success {
     border-color: #bfe8d2;
     border-left-color: #2f9b6a;
