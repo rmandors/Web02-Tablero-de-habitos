@@ -1,0 +1,93 @@
+body {
+    min-height: 100vh;
+    background: #f7f1e8;
+    color: #2b241c;
+}
+
+.tablero {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fffaf3;
+    border: 2px solid #e4d5be;
+    border-radius: 24px;
+}
+
+.tablero-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.tablero-icono {
+    width: 72px;
+    height: 72px;
+}
+
+.tablero-etiqueta {
+    display: inline-block;
+    padding: 0.15rem 0.65rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: #3d8fd1;
+    border-radius: 999px;
+}
+
+.tablero-titulo {
+    margin: 0.15rem 0 0.2rem;
+    font-size: 1.85rem;
+    font-weight: 700;
+}
+
+.tablero-subtitulo {
+    color: #7a7064;
+}
+
+.tablero-form {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    font-weight: 700;
+}
+
+.form-control {
+    border: 2px solid #eadfce;
+    border-radius: 12px;
+}
+
+.form-control:focus {
+    border-color: #f08a3a;
+    box-shadow: none;
+}
+
+.btn-agregar {
+    font-weight: 700;
+    color: #ffffff;
+    background: #f08a3a;
+    border: none;
+    border-radius: 12px;
+}
+
+.btn-agregar:hover {
+    color: #ffffff;
+    background: #dc7424;
+}
+
+.habit-list .list-group-item {
+    margin-bottom: 0.75rem;
+    border: 2px solid #eadfce;
+    border-left: 8px solid #3d8fd1;
+    border-radius: 12px;
+    background: #ffffff;
+    font-weight: 700;
+}
+
+.habit-list .list-group-item-success {
+    border-color: #bfe8d2;
+    border-left-color: #2f9b6a;
+    background: #e4f6ee;
+    color: #1f6b49;
+}
