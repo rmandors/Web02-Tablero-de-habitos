@@ -10,7 +10,7 @@
 <body class="bg-light">
     <div class="container py-5">
         <h1 class="h2 mb-4">Tablero de Hábitos</h1>
-        <form class="row g-3 align-items-end mb-4">
+        <form id="habit-form" class="row g-3 align-items-end mb-4">
             <div class="col-md-8">
                 <label for="habit-name" class="form-label">Nombre del hábito</label>
                 <input type="text" class="form-control" id="habit-name" placeholder="Ej. Beber 8 vasos de agua">
@@ -19,10 +19,8 @@
                 <button type="submit" class="btn btn-primary w-100">Agregar</button>
             </div>
         </form>
-        <ul class="list-group">
-            <li class="list-group-item">Beber 8 vasos de agua</li>
-            <li class="list-group-item list-group-item-success text-decoration-line-through">Hacer ejercicio</li>
-        </ul>
+        <ul id="habit-list" class="list-group"></ul>
     </div>
+    <script src="logic.js"></script>
 </body>
 </html>
