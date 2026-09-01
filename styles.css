@@ -77,6 +77,9 @@ body {
 }
 
 .habit-list .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 0.75rem;
     border: 2px solid #eadfce;
     border-left: 8px solid #3d8fd1;
@@ -89,9 +92,13 @@ body {
     cursor: pointer;
 }
 
-.habit-list .list-group-item-success {
+.habit-list .list-group-item.completado {
     border-color: #bfe8d2;
     border-left-color: #2f9b6a;
     background: #e4f6ee;
     color: #1f6b49;
+}
+
+.habit-list .list-group-item.completado span {
+    text-decoration: line-through;
 }
